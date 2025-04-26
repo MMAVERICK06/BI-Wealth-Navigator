@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reports - Cognos Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      color: #333;
+    }
+
+    .navbar {
+      background: linear-gradient(to right, #36d1dc, #5b86e5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      color: white;
+    }
+
+    .navbar .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .content {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    .content h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 40px;
+    }
+
+    .report-frame {
+      display: flex;
+      justify-content: center;
+    }
+
+    iframe {
+      width: 90%;
+      max-width: 1000px;
+      height: 600px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">📄 Reports</div>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="charts.html">Charts Used</a>
+      <a href="logout.html">Logout</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>Reports Section</h1>
+    <p>View, download, or share the latest analytics reports generated using IBM Cognos.</p>
+    <div class="report-frame">
+      <iframe 
+        src="https://us1.ca.analytics.ibm.com/bi/?pathRef=.my_folders%2FNew%2Breport-3&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=run&amp;format=HTML&amp;prompt=false" width="320" height="200" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+</body>
+</html>

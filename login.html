@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
+    body {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      width: 90%;
+      max-width: 1000px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .left {
+      flex: 1;
+      padding: 50px 30px;
+    }
+
+    .left h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .left p {
+      font-size: 16px;
+      margin-bottom: 30px;
+      color: #ddd;
+    }
+
+    .right {
+      flex: 1;
+      background-color: white;
+      color: #333;
+      padding: 50px 30px;
+    }
+
+    .right h2 {
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .form-options {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .form-options input {
+      margin-right: 10px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #c0392b;
+    }
+
+    .right a {
+      color: #3498db;
+      font-size: 14px;
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    .right .agreement {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #777;
+    }
+
+    .right .agreement a {
+      color: #3498db;
+    }
+  </style>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Welcome Back</h1>
+      <p>Manage your financial future with clarity and confidence. Sign in to track your investments, monitor your goals, and gain insights into your wealth like never before.</p>
+    </div>
+    <div class="right">
+      <h2>Sign in</h2>
+      <form onsubmit="return validateLogin()">
+        <div class="form-group">
+          <input type="text" id="email" placeholder="Email Address" required />
+        </div>
+        <div class="form-group">
+          <input type="password" id="password" placeholder="Password" required />
+        </div>
+        <div class="form-options">
+          <input type="checkbox" id="remember" />
+          <label for="remember">Remember Me</label>
+        </div>
+        <button type="submit" class="btn">Sign in now</button>
+        <a href="#"></a>
+        <p class="agreement">
+          <a href="#"></a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function validateLogin() {
+      const user = document.getElementById("email").value;
+      const pass = document.getElementById("password").value;
+
+      if (user === "gopi" && pass === "2006") {
+        window.location.href = "home.html";
+      } else {
+        alert("❌ Invalid credentials. Use ID: 1234 and Password: 1234");
+      }
+
+      return false; // prevent form submission
+    }
+  </script>
+</body>
+</html>

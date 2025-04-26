@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>📊 Financial Insights Dashboard</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #80deea);
+      padding: 40px;
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #2e4053;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .chart-box {
+      background: #ffffff;
+      width: 45%;
+      margin: 15px 0;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      transition: transform 0.3s ease;
+    }
+    .chart-box:hover {
+      transform: scale(1.05);
+    }
+    .chart-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #1a4d63;
+      margin-bottom: 12px;
+    }
+    .desc {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      margin-top: 20px;
+    }
+    /* Navigation Bar Styles */
+    .navbar {
+      background-color: #2c3e50;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .navbar .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    .navbar .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .navbar .nav-links a:hover {
+      color: #ecf0f1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="logo">📊 Cognos Dashboard</div>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="reports.html">Reports</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="logout.html">Logout</a>
+    </div>
+  </div>
+
+  <h1>📊 Financial Insights Dashboard</h1>
+
+  <div class="container">
+    <div class="chart-box">
+      <div class="chart-title">🔵 Bar Chart – Debt-to-Equity vs Funding</div>
+      <div class="desc">Visualizes the company's debt-to-equity ratio against funding sources across fiscal years. Higher bars represent greater leverage or funding amounts.</div>
+    </div>
+
+    <div class="chart-box">
+      <div class="chart-title">📉 Line Chart – Expense vs Funding Trend</div>
+      <div class="desc">Shows the monthly expenses and funding inflows. Tracks the alignment of costs with funding over time, providing insights for budget planning.</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="chart-box">
+      <div class="chart-title">📊 Combo Chart – Operating Costs vs Funding</div>
+      <div class="desc">Combines bar and line charts to represent operating costs and funding sources, offering a clear view of financial balance on a monthly basis.</div>
+    </div>
+
+    <div class="chart-box">
+      <div class="chart-title">🍰 Pie Chart – Financial Health by Company</div>
+      <div class="desc">Displays a pie chart that highlights the financial health of each company. Larger segments indicate more significant contributions or stability.</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="chart-box">
+      <div class="chart-title">📊 Horizontal Bar Chart – Expense Category Trends</div>
+      <div class="desc">Organizes expenses by their trend status—whether they are declining, stable, or growing. Essential for cost control and strategic decisions.</div>
+    </div>
+
+    <div class="chart-box">
+      <div class="chart-title">💥 Bubble Chart – Revenue Growth</div>
+      <div class="desc">Displays company revenue growth using bubble sizes. Larger bubbles represent higher growth or market presence, offering a visual scale of performance.</div>
+    </div>
+  </div>
+
+</body>
+</html>
